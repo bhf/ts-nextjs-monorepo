@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.build.json",
+
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@bhf/components/*": ["packages/components/src/*"],
+      "@bhf/*": ["packages/*/src"]
+    },
+    "noEmit": true
+  }
+}

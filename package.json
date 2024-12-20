@@ -1,0 +1,23 @@
+{
+  "name": "ts-monorepo-nextjs",
+  "description": "Template for setting up a TypeScript monorepo around a NextJS App",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "clean": "pnpm run -r clean",
+    "build": "pnpm run -r build",
+    "test": "pnpm run -r test",
+    "lint": "eslint --ext js,ts,tsx .",
+    "dev": "pnpm --filter @bhf/nextjs-example dev",
+    "nextbuild": "pnpm --filter @bhf/nextjs-example build",
+    "storybook": "pnpm --filter @bhf/storybook storybook"
+  },
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-plugin-import": "~2.31.0",
+    "typescript": "^5"
+  }
+}
