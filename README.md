@@ -3,7 +3,7 @@
 For illustrative purposes only.
 
 A basic structure for a Typescript NextJS Monorepo with Storybook.
-Uses a ports and adapters style architecture.
+Uses a ports and adapters style architecture with workspaces.
 
 ## Structure
 
